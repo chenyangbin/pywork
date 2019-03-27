@@ -1,0 +1,10 @@
+
+python的运行借助于pycodeobject和pyc文件
+pycodeobject是python的真正运行文件
+
+python程序运行的时候编译结果保存在内存中的pycodeobject中，当python运行完毕以后，python解释器将pycodeobjict写回到py文件中‘’
+
+pyc是预编译的字节码文件。
+
+
+当第二次运行时候，程序会在硬盘中寻找pyc文件，找到以后直接载入，否则就重新解释一次。

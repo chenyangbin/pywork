@@ -1,0 +1,19 @@
+{
+    "python.linting.pylintEnabled": true,
+
+    "python.autoComplete.addBrackets":true,
+
+   
+
+    "workbench.colorCustomizations": {
+
+        //"editor.selectionForeground": "#00AC00",
+        //"editor.foreground": "#00AC00",
+        "editor.selectionComment": "#00AC00",
+        "editor.comment": "#00AC00",
+         // "editor.foreground": "#4EC9B0"
+        
+        }
+    }
+
+    
