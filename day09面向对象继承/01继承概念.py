@@ -40,3 +40,4 @@ class Friend(Amianl): #单继承
     pass
 
 print("不同的方法")
+print("各种有限算法")
