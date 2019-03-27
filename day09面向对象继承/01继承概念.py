@@ -6,6 +6,46 @@
 #一个类拥另一个类的资源的使用权
 #一个类可以继承另一个类的属性和方法，
 
+#继承涉及的问题
+    #1继承资源的权限 可使用的资源 
+    #2继承资源的使用 多继承的时候资源选择
+    #2继承资源的覆盖 多继承的时候资源优先级的选择
+    #4资源的累加     继承资源后，增加功能
+
+
+#---------------继承资源权限 公有 受保护 私有 ----------------
+#属性和类的权限 
+# 公有属性， 类中变量
+# 私有属性， _
+# 受保护的属性 __
+
+#测试子类对父类的权限的继承
+class Author_futher:
+    #属性权限
+    a = 1
+    _a = 2
+    __a = 3
+
+    #方法权限
+    def t1(self):
+        print("t1")
+
+    def _t2(self):
+        print("t2")
+
+    def __t3(self):
+        print("t3")
+
+class A:
+    def __init__(self):
+        pass
+
+    pass
+
+
+
+
+
 #类的区分
     #父类 超类 基类
     #子类 派生类 使用父类资源
@@ -17,10 +57,9 @@
         #有重叠（属性，方法）的多继承
 
 #-----------------------单继承示例-------------------------
-
-
 class Amianl:
     pass
+
 
 class Bird:
     pass
@@ -28,16 +67,26 @@ class Bird:
 class People:
     pass
 
-class Creature(Amianl, Bird, People):  #多继承
-
+class Creature(Bird, People):  #多继承
     pass
+
 print(Creature.__bases__)  #查看继承的基类
 
 print(type(Creature))
 print(Creature.__class__)
 
-class Friend(Amianl): #单继承
+class Friend(Amianl):
+    def __init__(self):
+        pass
+    
     pass
 
-print("不同的方法")
-print("各种有限算法")
+
+
+
+
+
+
+#---------------继承的优先级的问题----------------
+#由于搜索排序的模式的不同，导致，在属性的使用的使用的时候
+#继承的顺序按照python的版本的不同，以及使用的算法和侧重点不同，顺序也不同#

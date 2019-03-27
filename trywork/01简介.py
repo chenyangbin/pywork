@@ -14,6 +14,8 @@ class Caculator:
 
     @classmethod #实现类方法 静态，动态， 类方法  操作类属性，通过类名引用使用类属性
     def first_value(cls, v):
+
+    
         cls.result = v
 
     @classmethod
@@ -103,3 +105,7 @@ class Caculator3:
 C1 = Caculator3(2)
 C1.jia(5)
 C1.answer()
+
+
+
+# typ this code in order to test the flames 。so it looks llike beautifu
