@@ -59,7 +59,7 @@ class Test(Author_futher):
 p = Test()  #创建对象
 p.t1()
 p._t2()
-p.__t3()
+# p.__t3()
 
 
 
