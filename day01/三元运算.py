@@ -14,3 +14,8 @@ a, b, c = 11,22,33
 d = 'max ' if a < b else 'min'
 
 print(d)
+# 工程目录: c:\Users\bin\OneDrive - hk sar baomin inc\share\pywork\day01
+# 创建日期: 2019年05月24日 星期五
+# 工程目标：
+# 创建作者：binyang
+# -*- coding:utf-8 -*-
